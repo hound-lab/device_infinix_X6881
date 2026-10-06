@@ -11,24 +11,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from X6882 device
-$(call inherit-product, device/infinix/X6882/device.mk)
+$(call inherit-product, device/infinix/X6881/device.mk)
 
 BOARD_VENDOR := Infinix
-PRODUCT_NAME := lineage_X6882
-PRODUCT_DEVICE := X6882
+PRODUCT_NAME := lineage_X6881
+PRODUCT_DEVICE := X6881
 PRODUCT_MANUFACTURER := INFINIX
 PRODUCT_BRAND := Infinix
-PRODUCT_MODEL := Infinix X6882
+PRODUCT_MODEL := Infinix X6881
 
 PRODUCT_GMS_CLIENTID_BASE := android-transsion
-PRODUCT_SYSTEM_NAME := X6882-OP
-PRODUCT_SYSTEM_DEVICE := X6882
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="sys_tssi_64_armv82_infinix-user 14 UP1A.231005.007 980236 release-keys" \
-    BuildFingerprint=Infinix/X6882-OP/Infinix-X6882:14/UP1A.231005.007/260117V1572:user/release-keys \
-    DeviceName=$(PRODUCT_SYSTEM_DEVICE) \
-    DeviceProduct=$(PRODUCT_SYSTEM_NAME)
 
 # Time
 LINEAGE_VERSION_APPEND_TIME_OF_DAY := true

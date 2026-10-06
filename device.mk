@@ -302,12 +302,12 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
-    FrameworksResNoir \
-    SettingsResNoir \
-    SettingsProviderResNoir \
-    SystemUIResNoir \
+    FrameworksResGeiravor \
+    SettingsResGeiravor \
+    SettingsProviderResGeiravor \
+    SystemUIResGeiravor \
     OpenDeltaOverlayMT6789 \
-    WifiResNoir
+    WifiResGeiravor
 
 PRODUCT_PACKAGES += \
     ApertureOverlay \
@@ -510,4 +510,4 @@ PRODUCT_PACKAGES += \
     libkeystore-engine-wifi-hidl:64
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/infinix/X6882/X6882-vendor.mk)
+$(call inherit-product, vendor/infinix/X6881/X6881-vendor.mk)

@@ -57,60 +57,6 @@
             <kctl name="Tran_MidTest_LoopBack_Switch" value="Off" />
         </path>
         <!--BSP: add audio bring up XLQLHAEE-6 by jiaqiong.zhang 20220410 end-->
-        <path name="audiotest_speaker_output" value="turnon">
-            <kctl name="ADDA_DL_CH1 DL1_CH1" value="1" />
-            <kctl name="ADDA_DL_CH2 DL1_CH2" value="1" />
-            <kctl name="DAC In Mux" value="Normal Path" />
-            <kctl name="RCV Mux" value="Open" />
-            <kctl name="LOL Mux" value="Playback" />
-            <kctl name="Ext_Speaker_Amp Switch" value="1" />
-            <kctl name="Tran_Aw87xxx_Speaker_Switch" value="Bypass" />
-        </path>
-        <path name="audiotest_speaker_output" value="turnoff">
-            <kctl name="ADDA_DL_CH1 DL1_CH1" value="0" />
-            <kctl name="ADDA_DL_CH2 DL1_CH2" value="0" />
-            <kctl name="DAC In Mux" value="Normal Path" />
-            <kctl name="RCV Mux" value="Open" />
-            <kctl name="LOL Mux" value="Open" />
-            <kctl name="Ext_Speaker_Amp Switch" value="0" />
-            <kctl name="Tran_Aw87xxx_Speaker_Switch" value="Off" />
-        </path>
-        <path name="audiotest_speaker2_output" value="turnon">
-            <kctl name="ADDA_DL_CH1 DL1_CH1" value="1" />
-            <kctl name="ADDA_DL_CH2 DL1_CH2" value="1" />
-            <kctl name="DAC In Mux" value="Normal Path" />
-            <kctl name="RCV Mux" value="Voice Playback" />
-            <kctl name="LOL Mux" value="Open" />
-            <kctl name="Ext_Speaker_Amp Switch" value="1" />
-            <kctl name="Tran_Aw87xxx_Speaker_Switch" value="Bypass" />
-        </path>
-        <path name="audiotest_speaker2_output" value="turnoff">
-            <kctl name="ADDA_DL_CH1 DL1_CH1" value="0" />
-            <kctl name="ADDA_DL_CH2 DL1_CH2" value="0" />
-            <kctl name="DAC In Mux" value="Normal Path" />
-            <kctl name="RCV Mux" value="Open" />
-            <kctl name="LOL Mux" value="Open" />
-            <kctl name="Ext_Speaker_Amp Switch" value="0" />
-            <kctl name="Tran_Aw87xxx_Speaker_Switch" value="Off" />
-        </path>
-        <path name="audiotest_handset_output" value="turnon">
-            <kctl name="ADDA_DL_CH1 DL1_CH1" value="1" />
-            <kctl name="ADDA_DL_CH2 DL1_CH2" value="1" />
-            <kctl name="DAC In Mux" value="Normal Path" />
-            <kctl name="RCV Mux" value="Voice Playback" />
-            <kctl name="LOL Mux" value="Open" />
-            <kctl name="Ext_Speaker_Amp Switch" value="1" />
-            <kctl name="Tran_Aw87xxx_Speaker_Switch" value="Receiver" />
-        </path>
-        <path name="audiotest_handset_output" value="turnoff">
-            <kctl name="ADDA_DL_CH1 DL1_CH1" value="0" />
-            <kctl name="ADDA_DL_CH2 DL1_CH2" value="0" />
-            <kctl name="DAC In Mux" value="Normal Path" />
-            <kctl name="RCV Mux" value="Open" />
-            <kctl name="LOL Mux" value="Open" />
-            <kctl name="Ext_Speaker_Amp Switch" value="0" />
-            <kctl name="Tran_Aw87xxx_Speaker_Switch" value="Off" />
-        </path>
        <!-- 2-in-1 speaker output-->
         <path name="two_in_one_speaker_output" value="turnon">
         </path>
@@ -1338,14 +1284,14 @@
         </path>
         <path name="ultrasound-proximity" value="turnon">
             <kctl name="Ultrasound Custom Setting 4" value="1" />
-            <kctl name="Ultrasound Mode" value="2543" />
+            <kctl name="Ultrasound Mode" value="2336" />
         </path>
         <path name="ultrasound-proximity" value="turnoff">
             <kctl name="Ultrasound Mode" value="0"  />
         </path>
         <path name="ultrasound-proximity-speaker" value="turnon">
             <kctl name="Ultrasound Custom Setting 4" value="1" />
-            <kctl name="Ultrasound Mode" value="2545" />
+            <kctl name="Ultrasound Mode" value="2338" />
             <kctl name="Ultrasound Log Level" value="7" />
         </path>
         <path name="ultrasound-proximity-speaker" value="turnoff">
@@ -1353,5 +1299,4 @@
             <kctl name="Ultrasound Log Level" value="7" />
         </path>
     </mixercontrol>
-    <outputdevice name="AUDIO_TYPEC_TEST" path="1" />
 </root>

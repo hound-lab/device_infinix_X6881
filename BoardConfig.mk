@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/infinix/X6882
+DEVICE_PATH := device/infinix/X6881
 KERNEL_PATH := $(DEVICE_PATH)-kernel
 CONFIGS_PATH := $(DEVICE_PATH)/configs
 
@@ -67,7 +67,7 @@ BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := Infinix-X6882
+TARGET_BOOTLOADER_BOARD_NAME := Infinix-X6881
 TARGET_NO_BOOTLOADER := true
 
 # Broken Rules
@@ -183,7 +183,7 @@ SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # OTA assert
-TARGET_OTA_ASSERT_DEVICE := X6882,Infinix-X6882
+TARGET_OTA_ASSERT_DEVICE := X6881,Infinix-X6881
 
 # Vendor Security Patch
 BOOT_SECURITY_PATCH := $(VENDOR_SECURITY_PATCH)
@@ -250,4 +250,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
 
 # Inherit the proprietary files
-include vendor/infinix/X6882/BoardConfigVendor.mk
+include vendor/infinix/X6881/BoardConfigVendor.mk
