@@ -22,5 +22,9 @@ PRODUCT_MODEL := Infinix X6881
 
 PRODUCT_GMS_CLIENTID_BASE := android-transsion
 
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DeviceName=X6881 \
+    BuildFingerprint=Infinix/X6881-OP/Infinix-X6881:14/UP1A.231005.007/250806V860:user/release-keys
+
 # Time
 LINEAGE_VERSION_APPEND_TIME_OF_DAY := true
